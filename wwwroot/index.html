@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Assignment 2</title>
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link href="css/main.css" rel="stylesheet" />
+
+</head>
+
+
+
+<body onload="defaultvalues()">
+
+
+    <h1>Elijah McKay</h1>
+    <img src="img/horse.jpg" alt="surf" class="center" />
+    <br />
+    <h2>Hopes for IS 413:</h2>
+    <p class="center">
+        The main thing that I hope to be able to come out of this class with is to be a better programmer. I
+        am really hopipng that this class will help me land a development internship of some kind. I am hoping to improve my
+        problem solving skills throughout the course of the class as well as be able to learn the theory behind the code I write.
+        I think this is something that I've lacked in the past but will most definitely help me in the future if I can nail that down.
+    </p>
+    <br />
+
+    <h2>My Top jobs wanted:</h2>
+    <ul class="wanted-jobs">
+        <li>1. Developer (not to picky on what kind yet)</li>
+        <li>2. Data Analyst</li>
+        <li>3. Project Manager</li>
+    </ul>
+
+    <form class="center">
+        <h2>Grading Scale:</h2>
+        <label>Enter total assignment score out of 100%:</label>
+        <input type="number" min="0" max="100" id="assignments" />
+        <br />
+        <label>Enter total quiz score out of 100%:</label>
+        <input type="number" min="0" max="100" id="quizzes" />
+        <br />
+        <label>Enter total group project score out of 100%:</label>
+        <input type="number" min="0" max="100" id="groupprojects" />
+        <br />
+        <label>Enter total exam score out of 100%:</label>
+        <input type="number" min="0" max="100" id="exams" />
+        <br />
+        <label>Enter intex score out of 100%:</label>
+        <input type="number" min="0" max="100" id="intex" />
+        <br />
+    </form>
+    <br /><br />
+    <input type="submit" class="buttoncenter" value="Submit Grades" id="submitButton" />
+
+    <script src="js/basicjava.js"></script>
+    <script src="\node_modules\jquery\dist\jquery.min.js"></script>
+
+</body>
+
+</html>
