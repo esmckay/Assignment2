@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewBag.Title = "Assignment 2";
+}
+
+@model Assignment2.Models.gradeCalc
+
+<body>
+    <form class="center" method="post">
+        <h2>Grading Scale:</h2>
+        <label>Enter total assignment score out of 100%:</label>
+        <input type="number" min="0" max="100" id="assignments" asp-for="assignments" />
+        <br />
+        <label>Enter total quiz score out of 100%:</label>
+        <input type="number" min="0" max="100" id="quizzes" asp-for="quizzes" />
+        <br />
+        <label>Enter total group project score out of 100%:</label>
+        <input type="number" min="0" max="100" id="groupprojects" asp-for="groupprojects" />
+        <br />
+        <label>Enter total exam score out of 100%:</label>
+        <input type="number" min="0" max="100" id="exams" asp-for="exams" />
+        <br />
+        <label>Enter intex score out of 100%:</label>
+        <input type="number" min="0" max="100" id="intex" asp-for="intex" />
+        <br />
+        <input type="submit" class="buttoncenter" value="Submit Grades" id="submitButton" />
+    </form>
+
+
+</body>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>@ViewBag.Title</title>
+    <link rel="shortcut icon" href="~/img/favicon.ico" />
+    <link href="~/css/main.css" rel="stylesheet" />
+
+</head>
+
+
+
+<body>
+    <header>
+
+        <h1>Elijah McKay</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Home" asp-action="gradeCalc">Grade Calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    @RenderBody()
+
+    <footer>Yeehaw</footer>
+
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/basicjava.js"></script>
+
+
+</body>
+
+</html>

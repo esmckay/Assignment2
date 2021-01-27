@@ -1,9 +1,6 @@
-﻿var submit = document.getElementById("submitButton");
-
-//$("#submitButton").click(  <-- For whatever reason. Switching to this causes my entire javascript file to just crash and burn.
-
-
-submit.addEventListener("click", function () {
+﻿$("#submitButton").click(
+    function ()
+    {
     var assignscore = parseInt($("#assignments").val());
     var quizscore = parseInt($("#quizzes").val());
     var gpscore = parseInt($("#groupprojects").val());
@@ -49,7 +46,7 @@ submit.addEventListener("click", function () {
         alert("Final grade = " + finalGrade + "% with a letter grade of: " + letterGrade);
     }
     else {
-        alert("Please enter in a value for all inputs.")
+        alert("Please enter in a valid value for all inputs.")
     }
 });
 
