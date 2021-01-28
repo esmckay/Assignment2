@@ -1,6 +1,8 @@
-﻿$("#submitButton").click(
+﻿//This is a button that has a click function that runs the simple javascript on the page.
+$("#submitButton").click(
     function ()
     {
+        //assign the variables
     var assignscore = parseInt($("#assignments").val());
     var quizscore = parseInt($("#quizzes").val());
     var gpscore = parseInt($("#groupprojects").val());
@@ -9,10 +11,12 @@
     var finalGrade;
     var letterGrade;
 
+        //check to make sure that they are in the range required.
     if (assignscore > 100 || assignscore < 0 || quizscore > 100 || quizscore < 0 || gpscore > 100 || gpscore < 0 ||
         examscore > 100 || examscore < 0 || intexscore > 100 || intexscore < 0) {
         alert("You may only enter in values that are in between 0 and 100. Please check your answers and try again.")
     }
+        //checks to see if they're in the range required.
     else if (assignscore <= 100 && assignscore >= 0 && quizscore <= 100 && quizscore >= 0 && gpscore <= 100 && gpscore >= 0 &&
         examscore <= 100 && examscore >= 0 && intexscore <= 100 && intexscore >= 0) {
 
@@ -45,6 +49,7 @@
 
         alert("Final grade = " + finalGrade + "% with a letter grade of: " + letterGrade);
     }
+        //alert for when they don't enter anything into the text box
     else {
         alert("Please enter in a valid value for all inputs.")
     }

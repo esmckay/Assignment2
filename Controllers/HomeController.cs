@@ -9,18 +9,19 @@ namespace Assignment2.Controllers
 {
     public class HomeController : Controller
     {
+        //My different views for when the website is pulled up and when they jump from page to page.
         public IActionResult Index()
         {
             return View();
         }
 
-        [HttpGet("Fanmail")]
+        [HttpGet("gradeCalc")]
         public IActionResult gradeCalc()
         {
             return View();
         }
 
-        [HttpPost("FanMail")]
+        [HttpPost("gradeCalc")]
         public IActionResult gradeCalc(gradeCalc model)
         {
             return View();

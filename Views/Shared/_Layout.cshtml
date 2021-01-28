@@ -1,8 +1,9 @@
 ﻿<!DOCTYPE html>
+<!--This is my shared view-->
 <html>
 
 <head>
-
+    <!--This is where i bring in my razor title, my css sheet and my favicon.-->
     <title>@ViewBag.Title</title>
     <link rel="shortcut icon" href="~/img/favicon.ico" />
     <link href="~/css/main.css" rel="stylesheet" />
@@ -13,7 +14,7 @@
 
 <body>
     <header>
-
+        <!--My header and my naviation items.-->
         <h1>Elijah McKay</h1>
         <menu>
             <ul>
@@ -22,11 +23,11 @@
             </ul>
         </menu>
     </header>
-
+    <!--This is where I bring in the content from the different views.-->
     @RenderBody()
-
-    <footer>Yeehaw</footer>
-
+    <!--this is the footer-->
+    <footer>Yeehaw this be my footer</footer>
+    <!--These are my .js files that I reference throughout my site.-->
     <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
     <script src="~/js/basicjava.js"></script>
 

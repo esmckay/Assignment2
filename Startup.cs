@@ -22,6 +22,7 @@ namespace Assignment2
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //checks to see if the user is in devlopment mode or not.
             if(env.IsEnvironment("Development"))
             {
                 app.UseDeveloperExceptionPage();
@@ -31,12 +32,12 @@ namespace Assignment2
                 //Add Error Page
             }
            
-
+            //This makes it so you use the jquery and stuff. 
             app.UseNodeModules();
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            //good ole endpoints eh?
             app.UseEndpoints(cfg =>
                 {
                     cfg.MapControllerRoute("Default",

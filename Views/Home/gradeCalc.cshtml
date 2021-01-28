@@ -6,10 +6,16 @@
 }
 
 @model Assignment2.Models.gradeCalc
-
+<!--
+This is my body for the grading assingment.
+-->
 <body>
     <form class="center" method="post">
         <h2>Grading Scale:</h2>
+    <!--This is where they will input their scores out of 100 for the different categories. 
+        They all have their separate ID's so we can pull stuff out of them.-->
+
+    <!--I also made it so the inputs are a number with a minimum of 0 and a max of 100-->
         <label>Enter total assignment score out of 100%:</label>
         <input type="number" min="0" max="100" id="assignments" asp-for="assignments" />
         <br />
@@ -25,6 +31,7 @@
         <label>Enter intex score out of 100%:</label>
         <input type="number" min="0" max="100" id="intex" asp-for="intex" />
         <br />
+        <!--This is my submit button.-->
         <input type="submit" class="buttoncenter" value="Submit Grades" id="submitButton" />
     </form>
 

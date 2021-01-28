@@ -7,21 +7,26 @@ using System.Threading.Tasks;
 namespace Assignment2.Models
 {
     public class gradeCalc
-    {
+    {//This makes it so all inputs are required and that they are in the range of 0 and 100.
         [Required]
-        public int assignments { get; set; }
+        [Range(0,100)]
+        public double assignments { get; set; }
 
         [Required]
-        public int quizzes { get; set; }
+        [Range(0, 100)]
+        public double quizzes { get; set; }
 
         [Required]
-        public int groupprojects { get; set; }
+        [Range(0, 100)]
+        public double groupprojects { get; set; }
 
         [Required]
-        public int exams { get; set; }
+        [Range(0, 100)]
+        public double exams { get; set; }
 
         [Required]
-        public int intex { get; set; }
+        [Range(0, 100)]
+        public double intex { get; set; }
 
     }
 }

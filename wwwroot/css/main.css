@@ -1,4 +1,6 @@
-﻿body {
+﻿/*This is my styles page that contains a whole bunch of styles that are used across the different views*/
+
+body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     align-content: center;
 }
@@ -8,6 +10,20 @@ label {
     color: black;
     width: 150px;
     display: inline-block;
+}
+
+menu {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 img {
